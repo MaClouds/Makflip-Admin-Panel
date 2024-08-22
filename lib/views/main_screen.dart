@@ -17,30 +17,30 @@ class MainScreen extends StatefulWidget {
 }
 
 class _MainScreenState extends State<MainScreen> {
-  Widget _selectedScreen = const VendorsScreen();
+  Widget _selectedScreen = const UploadBannerScreen();
 
   screenSelector(item) {
     switch (item.route) {
-      case BuyersScreen.id:
-        setState(() {
-          _selectedScreen = const BuyersScreen();
-        });
+      // case BuyersScreen.id:
+      //   setState(() {
+      //     _selectedScreen = const BuyersScreen();
+      //   });
 
-        break;
+      //   break;
 
-      case VendorsScreen.id:
-        setState(() {
-          _selectedScreen = const VendorsScreen();
-        });
+      // case VendorsScreen.id:
+      //   setState(() {
+      //     _selectedScreen = const VendorsScreen();
+      //   });
 
-        break;
+      //   break;
 
-      case OrdersScreen.id:
-        setState(() {
-          _selectedScreen = OrdersScreen();
-        });
+      // case OrdersScreen.id:
+      //   setState(() {
+      //     _selectedScreen = OrdersScreen();
+      //   });
 
-        break;
+      //   break;
 
       case CategoryScreen.id:
         setState(() {
@@ -59,10 +59,10 @@ class _MainScreenState extends State<MainScreen> {
 
         break;
 
-      case ProductScreen.id:
-        setState(() {
-          _selectedScreen = ProductScreen();
-        });
+      // case ProductScreen.id:
+      //   setState(() {
+      //     _selectedScreen = ProductScreen();
+      //   });
     }
   }
 
@@ -102,21 +102,21 @@ class _MainScreenState extends State<MainScreen> {
           ),
         ),
         items: const [
-          AdminMenuItem(
-            title: 'Vendors',
-            route: VendorsScreen.id,
-            icon: CupertinoIcons.person_3,
-          ),
-          AdminMenuItem(
-            title: 'Buyers',
-            route: BuyersScreen.id,
-            icon: CupertinoIcons.person,
-          ),
-          AdminMenuItem(
-            title: 'Orders',
-            route: OrdersScreen.id,
-            icon: CupertinoIcons.shopping_cart,
-          ),
+          // AdminMenuItem(
+          //   title: 'Vendors',
+          //   route: VendorsScreen.id,
+          //   icon: CupertinoIcons.person_3,
+          // ),
+          // AdminMenuItem(
+          //   title: 'Buyers',
+          //   route: BuyersScreen.id,
+          //   icon: CupertinoIcons.person,
+          // ),
+          // AdminMenuItem(
+          //   title: 'Orders',
+          //   route: OrdersScreen.id,
+          //   icon: CupertinoIcons.shopping_cart,
+          // ),
           AdminMenuItem(
             title: 'Categories',
             route: CategoryScreen.id,
@@ -132,11 +132,11 @@ class _MainScreenState extends State<MainScreen> {
             route: UploadBannerScreen.id,
             icon: Icons.upload,
           ),
-          AdminMenuItem(
-            title: 'Products',
-            route: ProductScreen.id,
-            icon: Icons.store,
-          ),
+          // AdminMenuItem(
+          //   title: 'Products',
+          //   route: ProductScreen.id,
+          //   icon: Icons.store,
+          // ),
         ],
         selectedRoute: VendorsScreen.id,
         onSelected: (item) {
